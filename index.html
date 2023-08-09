@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Camcorder</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="capture-image">
+          <h2>Capture Image</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="camera">
+                <video id="video" width="400" height="300">
+                  Video stream not available.
+                </video>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <canvas id="canvas" width="400" height="300"> </canvas>
+              <div class="output">
+                <img
+                  id="photo"
+                  alt="The screen capture will appear in this box."
+                  src=""
+                />
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="btn-wrap text-center">
+                <button id="startbutton" class="btn btn-primary">
+                  Take photo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="capture-video">
+          <h2>Capture Video</h2>
+          <div class="row">
+            <div class="col-md-6">
+              <video id="preview" autoplay="" muted=""></video>
+              <h2>Preview</h2>
+            </div>
+            <div class="col-md-6">
+              <video id="recording" width="" height="" controls=""></video>
+              <h2>Recording</h2>
+            </div>
+            <div class="col-md-12">
+              <div class="btn-wrap text-center">
+                <button id="startButton" class="btn btn-primary">
+                  Start Recording
+                </button>
+                <button id="stopButton" class="btn btn-primary">
+                  Stop Recording</button
+                ><a id="downloadButton" class="btn btn-warning"> Download </a>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <pre id="log"></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

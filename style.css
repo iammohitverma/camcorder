@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font:
+        14px "Open Sans",
+        "Arial",
+        sans-serif;
+}
+
+section {
+    position: relative;
+    padding: 100px 0;
+    background: #ff877e;
+}
+
+.capture-image {
+    position: relative;
+    background: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 50px;
+}
+
+.capture-video {
+    position: relative;
+    background: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 50px;
+}
+
+h2 {
+    position: relative;
+    font-size: 22px;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+video {
+    position: relative;
+    border: 1px solid #111;
+    max-width: 100%;
+}
+
+.btn-wrap {
+    position: relative;
+    margin-top: 40px;
+}
+
+.btn-wrap>* {
+    margin: 0 10px;
+}
